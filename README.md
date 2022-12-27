@@ -1,68 +1,68 @@
 # Architectura de Linux: Carpetas / luego etc dev home usr var
-# Abro Terminal Windows: luego flechita abajo y selecciono Ubuntu
-# Dentro de Ubuntu le doy a code . y me abre Visual Studio
-# Ctrl + l equivale a darle clear
+## Abro Terminal Windows: luego flechita abajo y selecciono Ubuntu
+## Dentro de Ubuntu le doy a code . y me abre Visual Studio
+## Ctrl + l equivale a darle clear
 cd clear
-# Para listar los archivos de donde estoy
+## Para listar los archivos de donde estoy
 ls
-# Para listar los archivos de donde estoy con detalles
+## Para listar los archivos de donde estoy con detalles
 ls -l
-# Para listar los archivos de donde estoy con detalles para humanos
+## Para listar los archivos de donde estoy con detalles para humanos
 ls -h
-# Para listar los archivos de donde estoy con maximo detalle para humanos
+## Para listar los archivos de donde estoy con maximo detalle para humanos
 ls -lh
-# cd nos lleva al directorio donde estoy
+## cd nos lleva al directorio donde estoy
 cd
-# Este nos lleva al directorio Home de una sola vez
+## Este nos lleva al directorio Home de una sola vez
 cd ../..
-# Este nos lleva al directorio que deseo
+## Este nos lleva al directorio que deseo
 cd Directorioquedeseo
-# Este me da la informacion del path working directory
+## Este me da la informacion del path working directory
 pwd (path working directory)
-# Este me lleva al directorio especifico que deseo dentro de otro
+## Este me lleva al directorio especifico que deseo dentro de otro
 cd ./Documents/Dev
-# Este me lleva a un directorio mas arriba del que me encuentro
+## Este me lleva a un directorio mas arriba del que me encuentro
 cd .. (me regreso un directorio atras)
-# Este comando file me 
+## Este comando file me 
 file principios_de_usabilidad.md 
-# Este a continuacion me da la ruta y detalles
+## Este a continuacion me da la ruta y detalles
 file ./Picturesscreenshot.png
-# Para listarlos incluyendo los archivos ocultos
+## Para listarlos incluyendo los archivos ocultos
 ls -la
-# Para ordenarlos por mayor a menor tamano
+## Para ordenarlos por mayor a menor tamano
 ls -lS
-# Para mostrarlos en orden reverso
+## Para mostrarlos en orden reverso
 ls -lr
-# Para ver los directorios y archivos como arbol
+## Para ver los directorios y archivos como arbol
 tree
-# Para ver menos directorios en detalle y mas manejable en dos niveles
+## Para ver menos directorios en detalle y mas manejable en dos niveles
 tree -L 2
-# Para crear directorio (se aconseja no colocar espacios en el nobmre)
+## Para crear directorio (se aconseja no colocar espacios en el nobmre)
 mkdir miDirectorio
-# Si tengo que poner espacio aparecera como 'Mi Directorio
+## Si tengo que poner espacio aparecera como 'Mi Directorio
 mkdir "Mi Directorio"'
-# Para crear archivo
+## Para crear archivo
 touch miArchivo
-# Para crear varios directorios de una manera rapida
+## Para crear varios directorios de una manera rapida
 mkdir dir1 dir2 dir3
-# Para crear varios archivos dentro del directorio dir1 voy a el y luego
+## Para crear varios archivos dentro del directorio dir1 voy a el y luego
 cd dir1
 touch file1 file2 file3
-# Para copiar archivo como nuevo archivo file_bk
+## Para copiar archivo como nuevo archivo file_bk
 cp file1 file_bk
-# Para moverlo a un directorio hacia atras
+## Para moverlo a un directorio hacia atras
 mv file_bk ..
-# Para renombrar el archivo mientrs lo muevo
+## Para renombrar el archivo mientrs lo muevo
 mv file_bk fileCopy
-# Para borrar archivo
+## Para borrar archivo
 rm fileCopy
-# Para borrar de modo interactivo que es mas seguro que con -rf
-# -rf es recursive forzed. Aqui utilizamos -i interactive
+## Para borrar de modo interactivo que es mas seguro que con -rf
+## -rf es recursive forzed. Aqui utilizamos -i interactive
 rm -i miArchivo
-# Y me continuara preguntando para hacerlo uno por uno hasta borrar
-# todos los archivos y finalmente para borrar tambien el directorio donde estaban
-# Para decirle que continue haciendo le escribo y (de YES)
-# Para mover el directorio 1 dentro del cirectorio 2
+## Y me continuara preguntando para hacerlo uno por uno hasta borrar
+## todos los archivos y finalmente para borrar tambien el directorio donde estaban
+## Para decirle que continue haciendo le escribo y (de YES)
+## Para mover el directorio 1 dentro del cirectorio 2
 mv dir1 dir2
 # Verifico
 ls dir1
