@@ -37,9 +37,9 @@ ls -lr
 tree
 ## Para ver menos directorios en detalle y mas manejable en dos niveles
 tree -L 2
-## Para crear directorio (se aconseja no colocar espacios en el nobmre)
+## Para crear directorio (se aconseja no colocar espacios en el nombre)
 mkdir miDirectorio
-## Si tengo que poner espacio aparecera como 'Mi Directorio
+## Si tengo que poner espacio aparecera como 'Mi Directorio'
 mkdir "Mi Directorio"'
 ## Para crear archivo
 touch miArchivo
@@ -52,23 +52,23 @@ touch file1 file2 file3
 cp file1 file_bk
 ## Para moverlo a un directorio hacia atras
 mv file_bk ..
-## Para renombrar el archivo mientrs lo muevo
+## Para renombrar el archivo mientras lo muevo
 mv file_bk fileCopy
 ## Para borrar archivo
 rm fileCopy
 ## Para borrar de modo interactivo que es mas seguro que con -rf
-## -rf es recursive forzed. Aqui utilizamos -i interactive
+## -rf es recursive forced. Aqui utilizamos -i interactive
 rm -i miArchivo
 ## Y me continuara preguntando para hacerlo uno por uno hasta borrar
 ## todos los archivos y finalmente para borrar tambien el directorio donde estaban
 ## Para decirle que continue haciendo le escribo y (de YES)
-## Para mover el directorio 1 dentro del cirectorio 2
+## Para mover el directorio 1 dentro del directorio 2
 mv dir1 dir2
 ## Verifico
 ls dir1
 ## Para remover un directorio
 rm -ri dir1
-## Me preguntara por ser interactive para ir borrando uno por uno hsta el directiorio incluso
+## Me preguntara por ser interactive para ir borrando uno por uno hasta el directorio incluso
 ## Antes de remover un archivo verificar primero con ls donde estoy ubicado
 ## Para que muestre las primeras 10 lineas
 head principios_de_usabilidad.md
@@ -168,7 +168,7 @@ cat error.txt output.txt
 ## Todos redirigen a un Standard output
 ## Para el standard input lo hacemos asi a continuacion
 cat < error.txt
-## El pipe operator | permite que el standard output de un comando se conviert
+## El pipe operator | permite que el standard output de un comando se convierte
 ## en el standard input de otro comando
 ls -lh
 ls -lh | less
@@ -200,7 +200,7 @@ mkdir text && cd test
 pwd
 cd ajknmsdklnmasdn && touch archivo.txt && echo "Archivo creado"
 ## Ese directorio no existe y no avanza al siguiente paso
-## El poperador or si lo permite
+## El operador or si lo permite
 cd ajknmsdklnmasdn || touch archivo.txt || echo "Archivo creado"
 ls
 cd asdkjasdj || echo "Cambio de directorio"
@@ -210,8 +210,8 @@ cd asdkjasdj || echo "Cambio de directorio"
 ## El modo octal da ponderacion de base de 2
 ## 4 2 1 = 7; En grupo 4+0+1=5; en World 4 +0+1=5
 ## Octales de 0 a 7 corresponden a binario 000,001,010,011,100,101,110,111
-## y permisos ---, --x,-w-,-wx,r--,r-x,rw-,rwx
-## El modo simbolico: u solo para el usuario; g solo para el grupo'o solo para otros (el World); a para todos
+## y permisos ---, --x,-w-,-wx,r--,r-x,rw-,rwx (read, write, execute)
+## El modo simbolico: "u" solo para el usuario; "g" solo para el grupo "o" solo para otros (el World); "a" para todos
 ## Modificando permisos en la terminal
 ## root tiene privilegios para hacer de todo
 mkdir sandbox
@@ -277,7 +277,7 @@ type cd
 which code
 which obs
 find ./ -name file
-## Busco todos los archivos que se llamen file en todos los idrectorios que tenga
+## Busco todos los archivos que se llamen file en todos los directorios que tenga
 find ./ -name *.txt | less
 find ./ -type fd
 ## Que solo busque files o directorios
@@ -410,3 +410,5 @@ curl www.google.com  -s | xq | grep "<title"
 curl www.google.com -Is
 ## Para
 curl www.google.com -ISs
+# Para Ubuntu version
+lsb_release -a
